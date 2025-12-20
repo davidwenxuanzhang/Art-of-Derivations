@@ -51,6 +51,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/davidwenxuanzhang/Art-of-Derivations',
+          showLastUpdateAuthor: true,
+				  showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -83,18 +85,31 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Art of Derivation',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+                  {
+          type: 'dropdown',  // 下拉菜单类型
+          label: 'Mathematics',     // 导航栏显示的名称
+          items: [
+            {
+               to: '/docs/Mathematics/Algebra',  // 链接到代数主页
+              label: 'Algebra',
+            },
+            {
+               to: '/docs/Mathematics/Geometry',  // 链接到几何主页
+              label: 'Geometry',
+            },
+            {
+               to: '/docs/Mathematics/Calculus',  // 链接到微积分主页
+              label: 'Calculus',
+            },
+            // 可以添加更多数学子项
+          ],
+        },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/davidwenxuanzhang/Art-of-Derivations',
