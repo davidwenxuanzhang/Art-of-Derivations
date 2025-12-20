@@ -41,7 +41,12 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
+      type: 'text/css',
+    },
+  ],
   presets: [
     [
       'classic',
@@ -54,7 +59,7 @@ const config = {
           editUrl:
             'https://github.com/davidwenxuanzhang/Art-of-Derivations',
           remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
+          rehypePlugins: [[rehypeKatex, { output: 'mathml' }]],
           showLastUpdateAuthor: true,
 				  showLastUpdateTime: true,
         },
