@@ -4,3 +4,28 @@ sidebar_position: 5
 ---
 
 # Integral with $ax^2+bx+c$
+
+### 29
+$$
+\int \frac{1}{ax^2+bx+c}\ \mathrm{d}x= 
+\left\{\begin{aligned}
+&\frac{2}{\sqrt{4ac-b^2}}\arctan{\frac{2ax+b}{\sqrt{4ac-b^2}}}+C \left(4ac>{b^2}\right)\\
+&\frac{1}{\sqrt{b^2-4ac}}\ln {\left|\frac{2ax+b-\sqrt{b^2-4ac}}{2ax+b+\sqrt{b^2-4ac}}\right|}+C\left(4ac<{b^2}\right)
+\end{aligned}
+\right.
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 30
+$$
+\blacksquare\int \frac{x}{ax^2+bx+c}\ \mathrm{d}x=\frac{1}{2a}\ln{\left|ax^2+bx+c\right|}-\frac{b}{2a}\int \frac{1}{ax^2+bx+c}\ \mathrm{d}x
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>

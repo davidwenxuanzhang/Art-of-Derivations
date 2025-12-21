@@ -4,3 +4,78 @@ sidebar_position: 4
 ---
 
 # Integral with $ax^2+b$
+
+### 22
+$$
+\int \frac{1}{ax^2+b} \ \mathrm{d}x = 
+\left\{\begin{aligned}
+&\frac{1}{\sqrt{ab}}\arctan\sqrt{\frac{a}{b}}x+C \left(b>0\right)\\
+&\frac{1}{2\sqrt{-ab}}\ln\left|\frac{\sqrt{a}x-\sqrt{-b}}{\sqrt{a}x+\sqrt{-b}}\right|+C\left(b<0\right)
+\end{aligned}
+\right.
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 23
+$$
+\int\frac{x}{ax^2+b}\ \mathrm{d}x=\frac{1}{2a}\ln\left|ax^2+b\right|+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 24
+$$
+\int \frac{x^2}{ax^2+b}\ \mathrm{d}x=\frac{x}{a}-\frac{b}{a}\int \frac{1}{ax^2+b}\ \mathrm{d}x
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 25
+$$
+\int \frac{1}{x\left(ax^2+b\right)}\ \mathrm{d}x=\frac{1}{2b}\ln \frac{x^2}{\left| ax^2+b\right|}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 26
+$$
+\int \frac{1}{x^2\left(ax^2+b\right)}\ \mathrm{d}x=-\frac{1}{bx}-\frac{a}{b}\int \frac{1}{ax^2+b}\ \mathrm{d}x
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 27
+$$
+\int \frac{1}{x^3\left(ax^2+b\right)}\ \mathrm{d}x=\frac{a}{2b^2}\ln{\frac{\left|ax^2+b\right|}{x^2}}-\frac{1}{2bx^2}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 28
+$$
+\int \frac{1}{\left(ax^2+b\right)^2}\ \mathrm{d}x=\frac{x}{2b\left(ax^2+b\right)}+\frac{1}{2b}\int \frac{1}{ax^2+b}\ \mathrm{d}x
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>

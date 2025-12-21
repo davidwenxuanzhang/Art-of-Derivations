@@ -6,13 +6,100 @@ sidebar_position: 2
 # Integral with $\sqrt{ax+b}$
 
 
-### 1
+### 10
 $$
-\int {\frac {1}{ax+b}}\ \mathrm{d}x=\frac {1}{a}\ln \left|{ax+b}\right|+C
+\int \sqrt{ax+b}=\frac{2}{3a}\sqrt{\left(ax+b\right)^3}+C
 $$
 <br/>
 <details>
 <summary>Derivation</summary>
 
+
+</details>
+
+### 11
+$$
+\int x\sqrt {ax+b}\ \ \mathrm{d}x=\frac{2}{15a^2}\left(3ax-2b\right)\sqrt{\left(ax+b\right)^3}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+
+### 12
+$$
+\int x^2\sqrt {ax+b}\ \ \mathrm{d}x= \frac{2}{105a^3}\left(15a^2x^2-12abx+8b^2\right)\sqrt{\left(ax+b\right)^3}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 13
+$$
+\int \frac{x}{\sqrt{ax+b}}\ \mathrm{d}x=\frac{2}{3a^2}\left(ax-2b \right)\sqrt{ax+b}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 14
+$$
+\int\frac{x^2}{\sqrt{ax+b}}\ \mathrm{d}x=\frac{2}{15a^3}\left(3a^2x^2-4abx+8b^2\right)\sqrt{ax+b}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+
+### 15
+$$
+\int \frac{1}{x \sqrt{ax+b}} \ \ \mathrm{d}x = 
+\left\{ \begin{aligned}
+&\frac{1}{\sqrt{b}} \ln{\left|\frac{\sqrt{ax+b}-\sqrt{b}}{\sqrt{ax+b}+\sqrt{b}}\right|} + C \ \left(b>0\right)\\
+&\frac{2}{\sqrt{-b}} \arctan{\sqrt{\frac{ax+b}{-b}}}+C \ \left(b<0\right)
+\end{aligned}
+\right. 
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 16
+$$
+\int\frac{x^2}{\sqrt{ax+b}}\ \mathrm{d}x=\frac{2}{15a^3}\left(3a^2x^2-4abx+8b^2\right)\sqrt{ax+b}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 17
+$$
+\int\frac{\sqrt{ax+b}}{x^2}\ \mathrm{d}x=-\frac{\sqrt{ax+b}}{x}+\frac{a}{2}\int\frac{1}{x\sqrt{ax+b}}\ \mathrm{d}x
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 18
+$$
+\int\frac{1}{x^2\sqrt{ax+b}}\ \mathrm{d}x=-\frac{\sqrt{ax+b}}{bx}-\frac{a}{2b}\int\frac{1}{x\sqrt{ax+b}}\ \mathrm{d}x
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
 
 </details>

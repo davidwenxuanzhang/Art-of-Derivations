@@ -4,3 +4,34 @@ sidebar_position: 3
 ---
 
 # Integral with $x^2 \pm a^2$
+
+### 19
+$$
+\int\frac{1}{x^2+a^2}\ \mathrm{d}x=\frac{1}{a}\arctan\left(\frac{x}{a}\right)+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+
+### 20
+$$
+\int \frac{1}{\left(x^2+a^2\right)^n}\ \mathrm{d}x=\frac{x}{2\left(n-1\right)a^2\left(x^2+a^2\right)^{n-1}}+\frac{2n-3}{2\left(n-1\right)a^2}\int \frac{1}{\left(x^2+a^2\right)^{n-1}}\ \mathrm{d}x
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
+
+### 20
+$$
+\int \frac{1}{x^2-a^2}\ \mathrm{d}x=\frac{1}{2a}\ln{\left| \frac{x-a}{x+a}\right|}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+</details>
