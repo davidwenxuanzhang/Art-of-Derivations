@@ -1,5 +1,5 @@
 ---
-id: algebra
+id: Calculus
 title: Intro 
 sidebar_position: 1
 ---
