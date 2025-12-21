@@ -1,0 +1,121 @@
+---
+sidebar_label: Integral with ax+b
+sidebar_position: 1
+---
+
+# Integral with $ax+b$
+
+### 1
+$$
+\int {\frac {1}{ax+b}}\ \mathrm{d}x=\frac {1}{a}\ln \left|{ax+b}\right|+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+
+
+</details>
+
+### 2
+$$
+\int \left(ax+b\right)^{\mu}\ \mathrm{d}x=\frac {1}{a\left(\mu+1\right)}\left(ax+b\right)^{\mu+1}+C\ \left(\mu\neq-1\right)
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+$$
+\dd[2]{x}
+$$
+
+</details>
+
+### 3
+$$
+\int\frac {x}{ax+b}\ \mathrm{d}x=\frac {1}{a^2}\left( ax-b\ln \left|{ax+b}\right|\right)+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+
+
+</details>
+
+### 4
+$$
+\int\frac{x^2}{ax+b}\ \mathrm{d}x=\frac{1}{a^3}\left[\frac{1}{2}\left(ax-b\right)^2+b^2\ln\left|{ax+b}\right|\right]+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+
+
+</details>
+
+
+### 5
+$$
+\int \frac {1}{x\left(ax+b\right)}\ \mathrm{d}x=\frac {1}{b}\ln {\left|\frac {x}{ax+b}\right|}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+
+
+</details>
+
+
+### 6
+$$
+\int \frac{1}{x^2\left(ax+b\right)}\ \mathrm{d}x=-\frac{1}{bx}+\frac{a}{b^2}\ln \left|\frac {ax+b}{x} \right|+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+
+
+</details>
+
+
+### 7
+$$
+\int \frac{x}{\left(ax+b\right)^2} \, \ \mathrm{d}x = \frac{1}{a^2} \left( \ln\left|ax+b\right| + \frac{b}{ax+b} \right) + C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+
+
+</details>
+
+
+### 8
+$$
+\int \frac{x^2}{\left(ax+b\right)^2}\ \mathrm{d}x=\frac {1}{a^3} \left(ax-2b\ln{\left|ax+b\right|}-\frac{b^2}{ax+b} \right )+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+
+
+</details>
+
+
+### 9
+$$
+\int \frac{1}{x\left(ax+b\right)^2}\ \mathrm{d}x=\frac{1}{b\left(ax+b\right)}+\frac{1}{b^2}\ln {\left|\frac{x}{ax+b} \right|}+C
+$$
+<br/>
+<details>
+<summary>Derivation</summary>
+
+
+
+</details>
