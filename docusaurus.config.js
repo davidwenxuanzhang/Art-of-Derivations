@@ -13,7 +13,7 @@ import remarkMath from 'remark-math';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Art of Derivation',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'All Things Are Derivable',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
