@@ -22,7 +22,7 @@ $$
 
 ### 30
 $$
-\blacksquare\int \frac{x}{ax^2+bx+c}\ \mathrm{d}x=\frac{1}{2a}\ln{\left|ax^2+bx+c\right|}-\frac{b}{2a}\int \frac{1}{ax^2+bx+c}\ \mathrm{d}x
+\int \frac{x}{ax^2+bx+c}\ \mathrm{d}x=\frac{1}{2a}\ln{\left|ax^2+bx+c\right|}-\frac{b}{2a}\int \frac{1}{ax^2+bx+c}\ \mathrm{d}x
 $$
 <br/>
 <details>
