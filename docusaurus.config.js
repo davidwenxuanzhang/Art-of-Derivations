@@ -119,6 +119,18 @@ const config = {
             // 可以添加更多数学子项
           ],
         },
+          {
+          type: 'dropdown',  // 下拉菜单类型
+          label: 'Notes in Class',     // 导航栏显示的名称
+          items: [
+            {
+               to: '/docs/Notes in Class/Multivariable',  // 链接到代数主页
+              label: 'Multivariable Calculus',
+            },
+            
+            // 可以添加更多数学子项
+          ],
+        },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/davidwenxuanzhang/Art-of-Derivations',
