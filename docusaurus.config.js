@@ -124,7 +124,7 @@ const config = {
           label: 'Notes in Class',     // 导航栏显示的名称
           items: [
             {
-               to: '/docs/Notes in Class/Multivariable',  // 链接到代数主页
+               to: '/docs/Notes-in-Class/Multivariable',  // 链接到代数主页
               label: 'Multivariable Calculus',
             },
             
