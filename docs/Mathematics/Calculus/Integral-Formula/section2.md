@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ### 10
 $$
-\int \sqrt{ax+b}=\frac{2}{3a}\sqrt{\left(ax+b\right)^3}+C
+\int \sqrt{ax+b}\ \mathrm{d}x=\frac{2}{3a}\sqrt{\left(ax+b\right)^3}+C
 $$
 <br/>
 <details>
