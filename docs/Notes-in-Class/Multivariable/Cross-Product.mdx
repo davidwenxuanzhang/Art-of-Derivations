@@ -1,0 +1,166 @@
+---
+sidebar_label: Cross-Product
+sidebar_position: 2
+---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Cross Product
+
+## Original Definition
+
+We know that given two vectors $\mathbf{u}$ and $\mathbf{v}$
+$$
+\mathbf{u} =u_1\mathbf{i}+u_2\mathbf{j}+u_3\mathbf{k}
+$$ 
+$$
+\mathbf{v} =v_1\mathbf{i}+v_2\mathbf{j}+v_3\mathbf{k}
+$$
+The cross product $\mathbf{u}\times \mathbf{v}$ is defined as a vector that is orthogonal to the plane created by $\mathbf{u}$ and $\mathbf{v}$.
+
+:::note[The magnitude:]
+
+$$
+\|\mathbf{u}\times \mathbf{v}\|=\|\mathbf{u}\|\|\mathbf{v}\|\sin{\theta}
+$$
+
+:::
+
+:::note[The direction:]
+
+<div style={{ textAlign: 'center' }}>
+  <img src={useBaseUrl('/img/rhr.jpg')} width="300"/>
+</div>
+
+:::
+
+## Alternative Definition
+
+Sometimes, you might encounter a definition of cross product like this: 
+:::note[Alternative Definition:]
+$$
+\mathbf{u}\times \mathbf{v}=(u_2v_3-u_3v_2)\mathbf{i}-(u_1v_3-u_3v_1)\mathbf{j}+(u_1v_2-u_2v_1)\mathbf{k}
+$$
+:::
+We will try to $\textcolor{magenta}{\text{Derive}}$ this. Here are some useful properties:
+:::info[Properties:]
+$$
+\begin{align}
+    \mathbf{u} \times\mathbf{v}&=-\mathbf{v} \times\mathbf{u}\\
+    \mathbf{u}\times (\mathbf{v}+\mathbf{w})&=(\mathbf{u}\times\mathbf{v})+(\mathbf{u}\times\mathbf{w})\\
+    c(\mathbf{u}\times \mathbf{v})&=(c\mathbf{u})\times \mathbf{v}=\mathbf{u}\times (c\mathbf{v})\\
+    \mathbf{u}\times 0&= 0\times \mathbf{u}=0\\
+    \mathbf{u}\times\mathbf{u}&=0\\
+    \mathbf{u}\cdot(\mathbf{v}\times \mathbf{w})&=(\mathbf{u}\times \mathbf{v})\cdot \mathbf{w}\\
+    \mathbf{i}\times \mathbf{j}=\mathbf{k} \qquad
+    \mathbf{j}\times &\mathbf{k}=\mathbf{i} \qquad
+    \mathbf{k}\times \mathbf{i}=\mathbf{j} 
+\end{align}
+$$
+:::
+<br/>
+<details>
+<summary>$\textcolor{magenta}{\text{Derivtion}}$</summary>
+$$
+  \begin{align*}
+    \mathbf{u}\times\mathbf{v} =& (u_1\mathbf{i}+u_2\mathbf{j}+u_3\mathbf{k})\times (v_1\mathbf{i}+v_2\mathbf{j}+v_3\mathbf{k}) \\
+    =&(u_1\mathbf{i}\times v_1\mathbf{i})+(u_1\mathbf{i}\times v_2\mathbf{j})+(u_1\mathbf{i}\times v_3\mathbf{k})+\\
+    &(u_2\mathbf{j}\times v_1\mathbf{i})+(u_2\mathbf{j}\times v_2\mathbf{j})+(u_2\mathbf{j}\times v_3\mathbf{k})+
+    &&\text{(Property 2)}\\
+    &(u_3\mathbf{k}\times v_1\mathbf{i})+(u_3\mathbf{k}\times v_2\mathbf{j})+(u_3\mathbf{k}\times v_3\mathbf{k})\\
+    =&u_1v_1(\mathbf{i}\times \mathbf{i})+
+    u_1v_2(\mathbf{i}\times \mathbf{j})+
+    u_1v_3(\mathbf{i}\times \mathbf{k})+\\
+    &u_2v_1(\mathbf{j}\times \mathbf{i})+
+    u_2v_2(\mathbf{j}\times \mathbf{j})+
+    u_2v_3(\mathbf{j}\times \mathbf{k})+
+    &&\text{(Property 3)}\\
+    &u_3v_1(\mathbf{k}\times \mathbf{i})+
+    u_3v_2(\mathbf{k}\times \mathbf{j})+
+    u_3v_3(\mathbf{k}\times \mathbf{k})\\
+    =&u_1v_2(\mathbf{i}\times \mathbf{j})+
+    u_1v_3(\mathbf{i}\times \mathbf{k})+
+    u_2v_1(\mathbf{j}\times \mathbf{i})+\\
+    &u_2v_3(\mathbf{j}\times \mathbf{k})+
+    u_3v_1(\mathbf{k}\times \mathbf{i})+
+    u_3v_2(\mathbf{k}\times \mathbf{j})
+    &&\text{(Property 5)}\\
+    =&u_1v_2(\mathbf{i}\times \mathbf{j})-u_2v_1(\mathbf{i}\times \mathbf{j})+\\
+    &u_2v_3(\mathbf{j}\times \mathbf{k})-u_3v_2(\mathbf{j}\times \mathbf{k})+&&\text{(Property 1)}\\
+    &u_3v_1(\mathbf{k}\times \mathbf{i})-u_1v_3(\mathbf{k}\times \mathbf{i})\\
+    =&(u_1v_2-u_2v_1)\mathbf{k}+(u_2v_3-u_3v_2)\mathbf{i}+(u_3v_1-u_1v_3)\mathbf{j}
+    &&\text{(Property 7)}\\
+    =&(u_2v_3-u_3v_2)\mathbf{i}-(u_1v_3-u_3v_1)\mathbf{j}+(u_1v_2-u_2v_1)\mathbf{k}
+    &&\text{(Rearrange)}
+    \\ &&&&\blacksquare
+  \end{align*}
+$$
+
+</details>
+
+## Related to Parallelogram
+
+It is obvious that according to our [originial definition](https://davidwenxuanzhang.github.io/Art-of-Derivations/docs/Notes-in-Class/Multivariable/Cross-Product#original-definition) of cross product, the magnitude of the cross product is also equal to the area of parallelogram created by $\mathbf{u}$ and $\mathbf{v}$
+
+:::note[Related to parallelogram:]
+
+$$
+\|\mathbf{u}\times \mathbf{v}\|=\|\mathbf{u}\|\|\mathbf{v}\|\sin{\theta}=S_{\text{parallelogram}}
+$$
+
+:::
+
+Interestingly, we could $\textcolor{magenta}{\text{Derive}}$ this from our [alternative definition](https://davidwenxuanzhang.github.io/Art-of-Derivations/docs/Notes-in-Class/Multivariable/Cross-Product#alternative-definition). Recall some properties:
+
+:::info[Properties:]
+$$
+\begin{align}
+    \|\mathbf{u}\|=&\sqrt{u_1^2+u_2^2+u_3^2}\\
+    \mathbf{u}\cdot \mathbf{v}=u_1v_1&+u_2v_2+u_3v_3\\
+    \mathbf{u}\cdot \mathbf{v}=|\mathbf{u}\|&\|\mathbf{v}\|\cos{\theta}\\
+    \mathbf{u}\times \mathbf{v}=(u_2v_3-u_3v_2)\mathbf{i}-(u_1v_3&-u_3v_1)\mathbf{j}+(u_1v_2-u_2v_1)\mathbf{k}\\
+    \cos^2{\theta}+\sin^2&{\theta}=1\\
+    (a-b)^2=a^2-&2ab+b^2\\
+    (a+b+c)^2=a^2+b^2+c^2&+2(ab+ac+bc)
+\end{align}
+$$
+:::
+
+Since we want $\|\mathbf{u}\|\|\mathbf{v}\|\sin{\theta} = \|\mathbf{u}\times \mathbf{v}\|
+$, and both side is positive because it is magnitude. Thus, we could alternatively $\textcolor{magenta}{\text{Derive}}$ the squared version:
+$$
+\|\mathbf{u}\|^2\|\mathbf{v}\|^2\sin^2{\theta} = \|\mathbf{u}\times \mathbf{v}\|^2
+$$
+
+<br/>
+<details>
+<summary>$\textcolor{magenta}{\text{Derivtion}}$</summary>
+$$
+  \begin{align*}
+    \|\mathbf{u}\|^2\|\mathbf{v}\|^2\sin^2{\theta} =&\|\mathbf{u}\|^2\|\mathbf{v}\|^2(1-\cos^2{\theta})
+    &&\text{(Property 12)}\\
+    =&\|\mathbf{u}\|^2\|\mathbf{v}\|^2-(\|\mathbf{u}\|^2\|\mathbf{v}\|^2\cos^2{\theta})\\
+    =&\|\mathbf{u}\|^2\|\mathbf{v}\|^2-(\mathbf{u}\cdot \mathbf{v})^2
+    &&\text{(Property 10)}\\
+    =&\|\mathbf{u}\|^2\|\mathbf{v}\|^2-(u_1v_1+u_2v_2+u_3v_3)^2
+    &&\text{(Property 9)}\\
+    =&(u_1^2+u_2^2+u_3^2)(v_1^2+v_2^2+v_3^2)-
+    &&\text{(Property 8)}\\
+    &[u_1^2v_1^2+u_2^2v_2^2+u_3^2v_3^2+2(u_1v_1u_2v_2+u_1v_1u_3v_3+u_2v_2u_3v_3)]
+    &&\text{(Property 14)}\\
+    =&\cancel{u_1^2v_1^2}+u_1^2v_2^2+u_1^2v_3^2+\\
+    &u_2^2v_1^2+\cancel{u_2^2v_2^2}+u_2^2v_3^2+\\
+    &u_3^2v_1^2+u_3^2v_2^2+\cancel{u_3^2v_3^2}-&&\text{(Cancel terms)}\\
+    &\cancel{u_1^2v_1^2}-\cancel{u_2^2v_2^2}-\cancel{u_3^2v_3^2}-\\
+    &2u_1v_1u_2v_2-2u_1v_1u_3v_3-2u_2v_2u_3v_3\\
+    =&(u_2^2v_3^2-2u_2v_2u_3v_3+u_3^2v_2^2)+\\
+    &(u_1^2v_3^2-2u_1v_1u_3v_3+u_3^2v_1^2)+
+    &&\text{(Rearrange)}\\
+    &(u_1^2v_2^2-2u_1v_1u_2v_2+u_2^2v_1^2)\\
+    =&(u_2v_3-u_3v_2)^2+(u_1v_3-u_3v_1)^2+(u_1v_2-u_2v_1)^2
+    &&\text{(Property 10)}\\
+    =&\|\mathbf{u}\times \mathbf{v}\|^2
+    &&\text{(Property 11 and 8)}\\
+    &&&&\blacksquare
+  \end{align*}
+$$
+</details>
