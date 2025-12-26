@@ -3,11 +3,11 @@ sidebar_position: 2
 ---
 
 $$
-\boldsymbol{R}
+\mathbb{R}
 $$
 
 $$
-\vec{u} =u_1\mathbf{i}+u_2\mathbf{j}+u_3\mathbf{k}
+\mathbf{u} =u_1\mathbf{i}+u_2\mathbf{j}+u_3\mathbf{k}
 $$ 
 $$
 \mathbf{v} =v_1\mathbf{i}+v_2\mathbf{j}+v_3\mathbf{k}

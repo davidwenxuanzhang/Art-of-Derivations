@@ -59,7 +59,7 @@ const config = {
           editUrl:
             'https://github.com/davidwenxuanzhang/Art-of-Derivations',
           remarkPlugins: [remarkMath],
-          rehypePlugins: [[rehypeKatex, { output: 'mathml' }]],
+          rehypePlugins: [rehypeKatex],
           showLastUpdateAuthor: true,
 				  showLastUpdateTime: true,
         },
