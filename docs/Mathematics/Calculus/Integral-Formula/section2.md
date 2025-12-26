@@ -61,7 +61,7 @@ $$
 
 ### 15
 $$
-\int \frac{1}{x \sqrt{ax+b}} \ \ \mathrm{d}x = 
+\int \frac{1}{x \sqrt{ax+b}} \ \mathrm{d}x = 
 \left\{ \begin{aligned}
 &\frac{1}{\sqrt{b}} \ln{\left|\frac{\sqrt{ax+b}-\sqrt{b}}{\sqrt{ax+b}+\sqrt{b}}\right|} + C \ \left(b>0\right)\\
 &\frac{2}{\sqrt{-b}} \arctan{\sqrt{\frac{ax+b}{-b}}}+C \ \left(b<0\right)
