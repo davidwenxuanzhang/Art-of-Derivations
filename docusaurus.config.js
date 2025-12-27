@@ -14,7 +14,7 @@ import remarkMath from 'remark-math';
 const config = {
   title: 'Art of Derivation',
   tagline: 'All Things Are Derivable',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -84,7 +84,7 @@ const config = {
         title: 'Art of Derivation',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/icon.png',
         },
         items: [
                   {
